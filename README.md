@@ -137,5 +137,17 @@ This section of the project includes our work of deploying and improving the mod
 5. Focal loss: Update the logits using the distribution of positive and negative labels.
 Also, we used 3 types of fine-tuning for the base model
 1. Full fine-tuning: Fine-tuning all weights of the model
-2. Partial fine-tuning: 
+2. Partial fine-tuning: Fine-tuning of Cross-fusion section weights
+3. Head fine-tuning: Fine-tuning the fully connected(FC) part of the model
+More details of the improvements and experiments will be prepared in the future paper...
+The following table compares the full fine-tuned version of the C2T_Net with other approaches.
+
+Type of improvement                          | mean_attr_acc | mean_acc | mean_positive_recall | mean_negative_recall
+---------------------------------------------|---------------|----------|----------------------|----------------
+Full fine-tuning                             | 96.62         | 84.09    | 71.57                | 96.63
+Categorical loss                             | 95.65         | 79.81    | 63.29                | 95.94
+Sample_weight                                | 96.44         | 84.46    | 71.30                | 96.89
+sample_weight + update_logits                | 96.12         | 85.68    | 74.87                | 96.49
+GradNorm                                     | 96.44         | 83.66    | 70.92                | 96.40
+Focal loss                                   | 96.29         | 84.29    | 71.71                | 96.86
 
