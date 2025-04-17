@@ -128,26 +128,50 @@ To ensure both **diversity** and **balance** in the dataset, each pedestrian "tu
 
 This strategy enables the model to learn more **robust** and **generalizable** features under a variety of visual conditions.
 
-## Model Development
-This section of the project includes our work of deploying and improving the model named Channel-Aware Cross-Fused Transformer-style Networks (C2T-Net) on the dataset. The C2T_Net achieved 1st place in the UPAR@WACV2024 challenge on the UPAR dataset in jan 2024. We fine-tuned the model using our data, and also tested and improved the model by using methods like 
-1. Categorical loss: The loss that puts categorical labels in the categorical loss
-2. Sample_weight: Adjust weights for loss using the distribution of positive and negative labels
-3. Update logits: Update the predicted output using the recall of positive and negative labels
-4. GradNorm: Learn weights for each attribute, plus the weights of the main model
-5. Focal loss: Update the logits using the distribution of positive and negative labels.
-Also, we used 3 types of fine-tuning for the base model
-1. Full fine-tuning: Fine-tuning all weights of the model
-2. Partial fine-tuning: Fine-tuning of Cross-fusion section weights
-3. Head fine-tuning: Fine-tuning the fully connected(FC) part of the model
-More details of the improvements and experiments will be prepared in the future paper...
-The following table compares the full fine-tuned version of the C2T_Net with other approaches.
+## 🚀 Model Development
 
-Type of improvement                          | mean_attr_acc | mean_acc | mean_positive_recall | mean_negative_recall
----------------------------------------------|---------------|----------|----------------------|----------------
-Full fine-tuning                             | 96.62         | 84.09    | 71.57                | 96.63
-Categorical loss                             | 95.65         | 79.81    | 63.29                | 95.94
-Sample_weight                                | 96.44         | 84.46    | 71.30                | 96.89
-sample_weight + update_logits                | 96.12         | **<ins>85.68</ins>**    | **<ins>74.87</ins>** | 96.49
-GradNorm                                     | 96.44         | 83.66    | 70.92                | 96.40
-Focal loss                                   | 96.29         | 84.29    | 71.71                | 96.86
+This part of the project covers the adaptation and enhancement of **Channel-Aware Cross-Fused Transformer-style Networks (C2T-Net)** on the IslamicPAR dataset.  
+C2T-Net achieved **1st place** in the [UPAR@WACV2024](https://upar.io/) challenge (January 2024) on the original UPAR dataset.
+
+We fine-tuned the C2T-Net on our dataset and applied several strategies to improve performance:
+
+### 🔧 Model Enhancement Techniques
+
+1. **Categorical Loss**  
+   Introduces category-level supervision to better capture attribute group dependencies.
+
+2. **Sample Weighting**  
+   Adjusts loss contributions based on the imbalance of positive and negative label distributions.
+
+3. **Logit Updating**  
+   Refines predicted logits using recall information from positive and negative labels.
+
+4. **GradNorm**  
+   Learns separate weights for each attribute in addition to learning the base model weights.
+
+5. **Focal Loss**  
+   Reweights the loss to focus learning on harder, less frequent samples.
+
+### 🎯 Fine-Tuning Strategies
+
+We evaluated three levels of fine-tuning for the base C2T-Net:
+
+- **Full Fine-Tuning**: All model parameters are updated.
+- **Partial Fine-Tuning**: Only the cross-fusion layers are updated.
+- **Head Fine-Tuning**: Only the fully connected (FC) classification head is updated.
+
+> Further experiments and ablation studies will be detailed in the future paper.
+
+---
+
+### 📊 Performance Comparison
+
+| Type of Improvement                | Mean Attr Acc | Mean Acc | Mean Positive Recall | Mean Negative Recall |
+|-----------------------------------|----------------|----------|----------------------|----------------------|
+| Full Fine-Tuning                  | 96.62          | 84.09    | 71.57                | 96.63                |
+| Categorical Loss                  | 95.65          | 79.81    | 63.29                | 95.94                |
+| Sample Weight                     | 96.44          | 84.46    | 71.30                | 96.89                |
+| Sample Weight + Logit Update      | 96.12          | **<ins>85.68</ins>** | **<ins>74.87</ins>** | 96.49                |
+| GradNorm                          | 96.44          | 83.66    | 70.92                | 96.40                |
+| Focal Loss                        | 96.29          | 84.29    | 71.71                | 96.86                |
 
