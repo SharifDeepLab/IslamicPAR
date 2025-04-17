@@ -1,6 +1,6 @@
 IslamicPAR Dataset License (Research Use Only)
 
-Copyright (c) 2024 [Your Name or Organization]
+Copyright (c) 2024 [Sharif Deep Learning LAB]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this dataset and associated documentation files (the "Dataset"), to use the Dataset
@@ -9,13 +9,18 @@ for **non-commercial research and academic purposes only**, subject to the follo
 - The Dataset may not be used for commercial purposes, including but not limited to 
   any commercial product or service, or for-profit academic programs.
 
-- Redistribution of the Dataset, modified or unmodified, is not permitted without 
-  explicit written permission from the copyright holder.
+- Redistribution or publication of the Dataset, modified or unmodified, is not permitted without explicit written permission from the copyright holder.
 
 - Any publication or work produced using the Dataset must cite the following work:
 
-  [Include your citation block or BibTeX here.]
+  @misc{islamicpar2024,
+    title={IslamicPAR: Islamic Region Pedestrian Attribute Recognition Dataset},
+    author={Sharif Deep Learning LAB},
+    year={2024},
+    howpublished={\url{https://github.com/your-repo-link}},
+    note={Accessed: YYYY-MM-DD}
+  }
 
 THE DATASET IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
 
-Contact: [your email or link] for questions or licensing beyond research use.
+Contact: your.email@example.com for questions or licensing beyond research use.
