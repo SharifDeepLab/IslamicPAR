@@ -1,7 +1,11 @@
 # IslamicPAR
 
 <p align="center">
-  <img src="assets/boxes.png" alt="sample boxes" width="500"/>
+  <img src="assets/boxes.png" alt="sample boxes" width="700"/>
+</p>
+
+<p align="center">
+  <em>Figure 1: sample boxes from **IslamicPAR**.</em>
 </p>
 
 ## Project Overview
