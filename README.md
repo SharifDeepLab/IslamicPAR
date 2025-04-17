@@ -1,6 +1,6 @@
 # IslamicPAR
 ## Project Overview
-This project focuses on Pedestrian Attribute Recognition (PAR), an important yet challenging task that plays a key role in Pedestrian Re-Identification (ReID) and Person Retrieval. We present a novel real-world dataset named **IslaminPAR** tailored to PAR's unique challenges in diverse environments and cultural contexts. We also fine-tune the C2T-Net model with some improvements to the dataset.
+This project focuses on Pedestrian Attribute Recognition (PAR), an important yet challenging task that plays a key role in Pedestrian Re-Identification (ReID) and Person Retrieval. We present a novel real-world dataset named **IslamicPAR** suited to the PAR task and enriched in diverse environments and cultural contexts. We also fine-tune the C2T-Net model with some improvements to the dataset.
 
 ### 🔍 Key features of the dataset
 1. **Cultural Adaptation**: Our dataset is specifically designed to reflect Islamic cultural norms, providing a unique contribution to the PAR community. This dataset includes a wide variety of clothing styles, such as Hijab models, and formal and informal wear for male and female pedestrians.
