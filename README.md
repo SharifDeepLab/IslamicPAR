@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <em>Figure 1: sample boxes from **IslamicPAR**.</em>
+  <em>sample boxes from IslamicPAR.</em>
 </p>
 
 ## Project Overview
