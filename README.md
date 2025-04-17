@@ -42,8 +42,8 @@ After extracting `islamicPAR.zip`, you should see the following structure:
 ```
 islamicPAR/
 ├── release_data/
-│   ├── c1_v1_01_05.jpg
-│   ├── c2_v3_07_15.jpg
+│   ├── c1_v1_1_192.jpg
+│   ├── c2_v3_23_37.jpg
 │   └── ...
 └── dataset.xlsx
 ```
@@ -77,14 +77,14 @@ Where:
 #### 📌 Example:
 
 ```
-c2_v3_07_15.jpg
+c2_v7_128_1217.jpg
 ```
 
 This filename indicates:
 - **Camera 2** (`c2`)
-- **Video 3** recorded by Camera 2 (`v3`)
-- **Tube 07**, representing one pedestrian's trajectory
-- **Frame 15** selected from Tube 07
+- **Video 7** recorded by Camera 2 (`v7`)
+- **Tube 128**, representing one pedestrian's trajectory
+- **Frame 1217** selected from Tube 128
 
 ### 🧾 Label Description
 
