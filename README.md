@@ -131,9 +131,9 @@ This strategy enables the model to learn more **robust** and **generalizable** f
 ## 🚀 Model Development
 
 This part of the project covers the adaptation and enhancement of **Channel-Aware Cross-Fused Transformer-style Networks (C2T-Net)** on the IslamicPAR dataset.  
-C2T-Net achieved **1st place** in the [UPAR@WACV2024](https://upar.io/) challenge (January 2024) on the original UPAR dataset.
+C2T-Net achieved **1st place** in the [UPAR@WACV2024](https://chalearnlap.cvc.uab.cat/dataset/45/description/) challenge (January 2024) on the original UPAR dataset.
 
-We fine-tuned the C2T-Net on our dataset and applied several strategies to improve performance:
+We fine-tuned the C2T-Net on our dataset and applied strategies to enhance the performance of the main model:
 
 ### 🔧 Model Enhancement Techniques
 
@@ -160,7 +160,7 @@ We evaluated three levels of fine-tuning for the base C2T-Net:
 - **Partial Fine-Tuning**: Only the cross-fusion layers are updated.
 - **Head Fine-Tuning**: Only the fully connected (FC) classification head is updated.
 
-> Further experiments and ablation studies will be detailed in the future paper.
+> Further experiments and ablation studies will be detailed in a future paper.
 
 ---
 
