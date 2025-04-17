@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <em>sample boxes from IslamicPAR.</em>
+  <em>sample boxes from IslamicPAR</em>
 </p>
 
 ## Project Overview
