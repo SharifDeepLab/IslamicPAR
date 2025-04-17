@@ -175,3 +175,11 @@ We evaluated three levels of fine-tuning for the base C2T-Net:
 | GradNorm                          | 96.44          | 83.66    | 70.92                | 96.40                |
 | Focal Loss                        | 96.29          | 84.29    | 71.71                | 96.86                |
 
+## 🛡️ License
+
+This dataset is released under a **Research-Only License**.  
+It may be used strictly for **non-commercial research and academic purposes**.
+
+For any other use cases, including commercial or redistribution requests, please contact the authors.
+
+See the [LICENSE](./LICENSE) file for full terms.
