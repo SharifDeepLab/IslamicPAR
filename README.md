@@ -28,24 +28,26 @@ Total                | 4            | 1,785      | 208x442 (all boxes)
 **Note**: The variations in box resolution across scenes, as well as among individual boxes, stem from our box selection strategy applied to each person's tube (i.e., the sequence of boxes corresponding to that person). For every tube, we first identify three representative boxes: one with the highest resolution, one with the most typical (median) resolution, and one with the lowest resolution. Then, from these three, we select a single box based on parameters aimed at both generalizing and balancing the dataset — such as prioritizing occluded or diversely illuminated boxes for generalization, and ensuring a mix of high- and low-resolution samples for balance
 
 ### 🧾 Label Description
-The uploaded `dataset.xlsx` file in Drive provides annotations for the **Pedestrian Attribute Recognition (PAR)** task. This task is formulated as a **multi-label binary classification problem**, where each label is a binary attribute that the model must predict for each pedestrian image (box).
 
-#### 📁 Columns Description:
+The uploaded `dataset.xlsx` file provides annotations for each pedestrian image (box). This is a **multi-label binary classification** task, meaning each image may have multiple labels that are either true (1) or false (0).
 
-- **`ID`**: Identifier for each pedestrian image (box), which corresponds to a file name in the dataset.
+#### 📁 Column Descriptions:
+
+- **`ID`**: A unique identifier for each pedestrian image (box), corresponding to a file name in the dataset.
+
 - **Binary Attribute Labels**:
-  - **`U_color`**: Color of the **upper body clothing** [`U_black`, `U_blue`, `U_brown`, ...].
-  - **`L_color`**: Color of the **lower body clothing** [`L_black`, `L_blue`, `L_brown`, ...].
+  - **`U_color`**: Color of the **upper-body clothing** (e.g., `U_black`, `U_blue`, `U_brown`, ...).
+  - **`L_color`**: Color of the **lower-body clothing** (e.g., `L_black`, `L_blue`, `L_brown`, ...).
   - **`Age_...`**: Attributes related to **age categories**.
   - **`Gender_female`**: Indicates whether the person is **female**.
-  - **`Hair_...`**: Describes the **hair length**(only for men).
-  - **`Upper_short`**: Indicates if the **sleeves are short** on the upper body(only for men).
+  - **`Hair_...`**: Describes the **hair length** (for men).
+  - **`Upper_short`**: Indicates whether the **sleeves are short** on the upper body (for men).
   - **Accessories**:
     - **`Backpack`**
     - **`Bag`**
     - **`Hat`**
-  - **`Jeans`**: Specifies if the lower body clothing is **jeans**.
-  - **Islamic Region Attributes**:
+  - **`Jeans`**: Indicates whether the lower-body clothing is **jeans**.
+  - **Islamic Region Attributes** (for women):
     - **`Chador`**
     - **`Manto`**
     - **`Shawl`**
@@ -55,17 +57,23 @@ The uploaded `dataset.xlsx` file in Drive provides annotations for the **Pedestr
     - **`Plaid`**
     - **`Stripped`**
 
-- **`quality`**: This is **not a pedestrian attribute** but metadata indicating the **resolution quality** of the corresponding box (image).
+- **`quality`**: A **metadata field**, not an attribute, indicating the **resolution quality** of the corresponding image (box).
 
-#### 🧠 Selection Strategy:
+> Note: `////U_Others////` and `////L_Others////` denote cases where the clothing color is not among the predefined categories or the body part is not visible.
 
-To ensure both **diversity** and **balance** in the dataset, each pedestrian "tube" (a sequence of boxes for a person) undergoes a strategic selection:
-- From each tube, we extract three candidate boxes:
-  1. **Highest resolution**
-  2. **Most typical (median) resolution**
-  3. **Lowest resolution**
-- Then, one of these is selected based on a combination of:
-  - Dataset **generalization** goals (e.g., include occluded or varied illumination samples).
-  - Dataset **balance** (e.g., ensuring both high- and low-resolution samples are included).
 
-This strategy helps the model learn more **robust** and **generalizable** representations across varying conditions.
+### 🧠 Selection Strategy
+
+To ensure both **diversity** and **balance** in the dataset, each pedestrian "tube" (i.e., a sequence of image boxes for a person) goes through a strategic selection process:
+
+- Three candidate boxes are extracted per tube:
+  1. One with the **highest resolution**
+  2. One with the **median resolution**
+  3. One with the **lowest resolution**
+
+- One of these candidates is selected based on:
+  - Dataset **generalization** objectives (e.g., including occluded or variably illuminated images).
+  - Dataset **balance** considerations (e.g., incorporating both high- and low-resolution examples).
+
+This strategy enables the model to learn more **robust** and **generalizable** features under a variety of visual conditions.
+
