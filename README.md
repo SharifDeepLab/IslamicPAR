@@ -25,7 +25,6 @@ Local Shop Center    | 1            |   70       |    158x329
 Local Hospital       | 1            |   591      |    145x280
 Total                | 4            | 1,785      | 208x442 (all boxes)
 
-**Note**: The variations in box resolution across scenes, as well as among individual boxes, stem from our box selection strategy applied to each person's tube (i.e., the sequence of boxes corresponding to that person). For every tube, we first identify three representative boxes: one with the highest resolution, one with the most typical (median) resolution, and one with the lowest resolution. Then, from these three, we select a single box based on parameters aimed at both generalizing and balancing the dataset — such as prioritizing occluded or diversely illuminated boxes for generalization, and ensuring a mix of high- and low-resolution samples for balance
 
 ### 🧾 Label Description
 
