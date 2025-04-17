@@ -183,7 +183,22 @@ We evaluated three levels of fine-tuning for the base C2T-Net:
 | GradNorm                          | 96.44          | 83.66    | 70.92                | 96.40                |
 | Focal Loss                        | 96.29          | 84.29    | 71.71                | 96.86                |
 
-## 🛡️ License
+### 🚀 Model Inference
+
+For inference, we use the **best-performing model**, which combines the base **C2T-Net** with enhancements including **Sample Weighting** and **Logit Update** strategies. These improvements significantly boost attribute prediction accuracy and balance across classes.
+
+The following figure demonstrates the model's inference results on a sample pedestrian box from the dataset:
+
+<p align="center">
+  <img src="assets/inference.png" alt="Sample Inference Result" width="700"/>
+</p>
+
+<p align="center">
+  <em>Predicted attributes for a sample pedestrian image using the enhanced C2T-Net model.</em>
+</p>
+
+
+### 🛡️ License
 
 This dataset is released under a **Research-Only License**.  
 It may be used strictly for **non-commercial research and academic purposes**.
