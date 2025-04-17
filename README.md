@@ -31,13 +31,6 @@ You can download the full dataset from Google Drive:
 
 🔗 [Download islamicPAR.zip](https://drive.google.com/your-download-link-here)
 
-The zip file contains:
-
-- `release_data/` — A folder containing pedestrian boxes.
-- `dataset.xlsx` — An annotation file containing labels for each pedestrian box.
-
-### 📂 Dataset Structure
-
 After extracting `islamicPAR.zip`, you should see the following structure:
 
 ```
@@ -134,4 +127,15 @@ To ensure both **diversity** and **balance** in the dataset, each pedestrian "tu
   - Dataset **balance** considerations (e.g., incorporating both high- and low-resolution examples).
 
 This strategy enables the model to learn more **robust** and **generalizable** features under a variety of visual conditions.
+
+## Model Development
+This section of the project includes our work of deploying and improving the model named Channel-Aware Cross-Fused Transformer-style Networks (C2T-Net) on the dataset. The C2T_Net achieved 1st place in the UPAR@WACV2024 challenge on the UPAR dataset in jan 2024. We fine-tuned the model using our data, and also tested and improved the model by using methods like 
+1. Categorical loss: The loss that puts categorical labels in the categorical loss
+2. Sample_weight: Adjust weights for loss using the distribution of positive and negative labels
+3. Update logits: Update the predicted output using the recall of positive and negative labels
+4. GradNorm: Learn weights for each attribute, plus the weights of the main model
+5. Focal loss: Update the logits using the distribution of positive and negative labels.
+Also, we used 3 types of fine-tuning for the base model
+1. Full fine-tuning: Fine-tuning all weights of the model
+2. Partial fine-tuning: 
 
