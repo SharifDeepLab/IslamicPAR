@@ -147,7 +147,7 @@ Type of improvement                          | mean_attr_acc | mean_acc | mean_p
 Full fine-tuning                             | 96.62         | 84.09    | 71.57                | 96.63
 Categorical loss                             | 95.65         | 79.81    | 63.29                | 95.94
 Sample_weight                                | 96.44         | 84.46    | 71.30                | 96.89
-sample_weight + update_logits                | 96.12         | 85.68    | 74.87                | 96.49
+sample_weight + update_logits                | 96.12         | **<ins>85.68</ins>**    | **<ins>74.87</ins>** | 96.49
 GradNorm                                     | 96.44         | 83.66    | 70.92                | 96.40
 Focal loss                                   | 96.29         | 84.29    | 71.71                | 96.86
 
