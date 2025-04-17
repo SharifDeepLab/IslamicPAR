@@ -11,10 +11,6 @@ This project focuses on Pedestrian Attribute Recognition (PAR), an important yet
       - Multiple people per box
       - Partial body visibility
 
-🛡️ **Privacy Considerations**
--------------------
-To ensure ethical use and privacy, all faces have been blurred.
-
 ### 📊 Data Statistics
 In the following table, information about the extracted boxes is reported.
 
@@ -44,6 +40,8 @@ islamicPAR/
 
 - **`release_data/`**: Contains all pedestrian image boxes (cropped from video).
 - **`dataset.xlsx`**: Contains annotations for each image, including gender, clothing, accessories, and cultural attire.
+  
+❗ Note: To ensure ethical use and privacy, all faces have been blurred.
 
 ---
 
