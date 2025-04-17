@@ -25,6 +25,65 @@ Local Shop Center    | 1            |   70       |    158x329
 Local Hospital       | 1            |   591      |    145x280
 Total                | 4            | 1,785      | 208x442 (all boxes)
 
+### ⬇️ Download Dataset
+
+You can download the full dataset from Google Drive:
+
+🔗 [Download islamicPAR.zip](https://drive.google.com/your-download-link-here)
+
+The zip file contains:
+
+- `release_data/` — A folder containing pedestrian boxes.
+- `dataset.xlsx` — An annotation file containing labels for each pedestrian box.
+
+### 📂 Dataset Structure
+
+After extracting `islamicPAR.zip`, you should see the following structure:
+
+```
+islamicPAR/
+├── release_data/
+│   ├── c1_v1_01_05.jpg
+│   ├── c2_v3_07_15.jpg
+│   └── ...
+└── dataset.xlsx
+```
+
+- **`release_data/`**: Contains all pedestrian image boxes (cropped from video).
+- **`dataset.xlsx`**: Contains annotations for each image, including gender, clothing, accessories, and cultural attire.
+
+---
+
+### 🖼️ Image (Box) Description
+
+The dataset contains 1,785 cropped pedestrian images (referred to as boxes), located in the release_data/ folder. Each box is extracted from a selected frame within a pedestrian trajectory (tube) captured in surveillance videos.
+
+#### 📄 File Naming Format:
+
+Each image filename follows the format:
+
+```
+cx_vx_number1_number2.jpg
+```
+
+Where:
+
+- **`cx`** — Camera index (e.g., `c1`, `c2`, etc.)
+- **`vx`** — Video sequence index recorded by the corresponding camera.
+- **`number1`** — Tube index, identifying a unique pedestrian track within the video.
+- **`number2`** — Selected frame index from that pedestrian tube.
+
+#### 📌 Example:
+
+```
+c2_v3_07_15.jpg
+```
+
+This filename indicates:
+- **Camera 2** (`c2`)
+- **Video 3** recorded by Camera 2 (`v3`)
+- **Tube 07**, representing one pedestrian's trajectory
+- **Frame 15** selected from Tube 07
 
 ### 🧾 Label Description
 
