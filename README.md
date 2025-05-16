@@ -106,7 +106,7 @@ The uploaded `dataset.xlsx` file provides annotations for each pedestrian image 
     - **`Bag`**
     - **`Hat`**
   - **`Jeans`**: Indicates whether the lower-body clothing is **jeans**.
-  - **Islamic Region Attributes** (for women):
+  - **Cloth Attributes** (for women):
     - **`Chador`**
     - **`Manto`**
     - **`Shawl`**
