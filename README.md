@@ -205,7 +205,7 @@ If you use the IslamicPAR dataset in any publication, research, or public releas
 
     @misc{IslamicPAR2025,
       title={IslamicPAR: A Culturally Enriched Dataset for Pedestrian Attribute Recognition},
-      author={Ali Shahedi},
+      author={Ali Shahedi, Ali Jokar, Hoda Mohammadzadeh},
       note={Dataset available at https://github.com/your-repo-link, related paper forthcoming},
       year={2025}
     }
