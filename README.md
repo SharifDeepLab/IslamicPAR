@@ -174,14 +174,15 @@ We evaluated three levels of fine-tuning for the base C2T-Net:
 
 ### 📊 Performance Comparison
 
-| Type of Improvement                | Mean Attr Acc | Mean Acc | Mean Positive Recall | Mean Negative Recall | f1 score  |
-|-----------------------------------|----------------|----------|----------------------|----------------------|-----------|
-| Full Fine-Tuning                  | 96.60          | 83.61   | 70.64               | 96.59                  | 66.22     |
-| Categorical Loss                  | 95.58          | 79.57    | 62.87                | 96.18                | 59.85     |
-| Sample Weight                     | 96.19          | 83.84    | 70.82                | 96.94                | 65.18     |
-| Sample Weight + Logit Update      | 96.11          | **<ins>84.98</ins>** | **<ins>73.36</ins>** | 96.63    | 65.52     |
-| GradNorm                          | 96.50          | 83.44    | 68.50                | 96.41                | 65.93     |
-| Focal Loss                        | 96.44          | 83.47    | 70.02                | 96.92                | 65.4     |
+| Type of Improvement           | Mean Attr Acc | Mean Acc        | Mean Positive Recall | Mean Negative Recall | F1 Score |
+|------------------------------|----------------|------------------|----------------------|----------------------|----------|
+| Full Fine-Tuning             | 96.60          | 83.61            | 70.64                | 96.59                | 66.22    |
+| Categorical Loss             | 95.58          | 79.57            | 62.87                | 96.18                | 59.85    |
+| Sample Weight                | 96.19          | 83.84            | 70.82                | 96.94                | 65.18    |
+| Sample Weight + Logit Update | 96.11          | **<ins>84.98</ins>** | **<ins>73.36</ins>** | 96.63                | 65.52    |
+| GradNorm                     | 96.50          | 83.44            | 68.50                | 96.41                | 65.93    |
+| Focal Loss                   | 96.44          | 83.47            | 70.02                | 96.92                | 65.40    |
+
 
 <sub>🔹 *Note: The reported figures correspond to the epoch with the lowest validation loss observed during training.*</sub>
 
