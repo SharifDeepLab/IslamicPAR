@@ -200,6 +200,15 @@ The following figure demonstrates the model's inference results on a sample pede
   <em>Predicted attributes for a sample pedestrian image using the enhanced C2T-Net model.</em>
 </p>
 
+### 📚 Citation
+If you use the IslamicPAR dataset in any publication, research, or public release, you must include the following citation:
+
+    @misc{IslamicPAR2025,
+      title={IslamicPAR: A Culturally Enriched Dataset for Pedestrian Attribute Recognition},
+      author={Ali Shahedi},
+      note={Dataset available at https://github.com/your-repo-link, related paper forthcoming},
+      year={2025}
+    }
 
 ### 🛡️ License
 
