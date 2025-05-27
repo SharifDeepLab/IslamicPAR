@@ -143,6 +143,16 @@ C2T-Net achieved **1st place** in the [UPAR@WACV2024](https://chalearnlap.cvc.ua
 
 We fine-tuned the C2T-Net on our dataset and applied strategies to enhance the performance of the main model:
 
+### 🎯 Fine-Tuning Strategies
+
+We evaluated three levels of fine-tuning for the base C2T-Net:
+
+- **Full Fine-Tuning**: All model parameters are updated.
+- **Partial Fine-Tuning**: Only the cross-fusion layers are updated.
+- **Head Fine-Tuning**: Only the fully connected (FC) classification head is updated.
+
+> More details of the improvement methods will be added to the paper.
+
 ### 🔧 Model Enhancement Techniques
 
 1. **Categorical Loss**  
@@ -159,16 +169,6 @@ We fine-tuned the C2T-Net on our dataset and applied strategies to enhance the p
 
 5. **Focal Loss**  
    Reweights the loss to focus learning on harder, less frequent samples.
-
-### 🎯 Fine-Tuning Strategies
-
-We evaluated three levels of fine-tuning for the base C2T-Net:
-
-- **Full Fine-Tuning**: All model parameters are updated.
-- **Partial Fine-Tuning**: Only the cross-fusion layers are updated.
-- **Head Fine-Tuning**: Only the fully connected (FC) classification head is updated.
-
-> More details of the improvement methods will be added to the paper.
 
 ---
 
