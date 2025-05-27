@@ -151,7 +151,7 @@ We evaluated three levels of fine-tuning for the base C2T-Net:
 - **Partial Fine-Tuning**: Only the cross-fusion layers are updated.
 - **Head Fine-Tuning**: Only the fully connected (FC) classification head is updated.
 
-> More details of the improvement methods will be added to the paper.
+---
 
 ### 🔧 Model Enhancement Techniques
 
@@ -170,18 +170,20 @@ We evaluated three levels of fine-tuning for the base C2T-Net:
 5. **Focal Loss**  
    Reweights the loss to focus learning on harder, less frequent samples.
 
----
+> More details of the improvement methods will be added to the paper.
 
 ### 📊 Performance Comparison
 
-| Type of Improvement                | Mean Attr Acc | Mean Acc | Mean Positive Recall | Mean Negative Recall |
-|-----------------------------------|----------------|----------|----------------------|----------------------|
-| Full Fine-Tuning                  | 96.62          | 84.09    | 71.57                | 96.63                |
-| Categorical Loss                  | 95.65          | 79.81    | 63.29                | 95.94                |
-| Sample Weight                     | 96.44          | 84.46    | 71.30                | 96.89                |
-| Sample Weight + Logit Update      | 96.12          | **<ins>85.68</ins>** | **<ins>74.87</ins>** | 96.49                |
-| GradNorm                          | 96.44          | 83.66    | 70.92                | 96.40                |
-| Focal Loss                        | 96.29          | 84.29    | 71.71                | 96.86                |
+| Type of Improvement                | Mean Attr Acc | Mean Acc | Mean Positive Recall | Mean Negative Recall | f1 score  |
+|-----------------------------------|----------------|----------|----------------------|----------------------|-----------|
+| Full Fine-Tuning                  | 96.60          | 83.61   | 70.64               | 96.59                  | 66.22     |
+| Categorical Loss                  | 95.58          | 79.57    | 62.87                | 96.18                | 59.85     |
+| Sample Weight                     | 96.19          | 83.84    | 70.82                | 96.94                | 65.18     |
+| Sample Weight + Logit Update      | 96.11          | **<ins>84.98</ins>** | **<ins>73.36</ins>** | 96.63    | 65.52     |
+| GradNorm                          | 96.50          | 83.44    | 68.50                | 96.41                | 65.93     |
+| Focal Loss                        | 96.44          | 83.47    | 70.02                | 96.92                | 65.4     |
+
+<sub>🔹 *Note: The reported figures correspond to the epoch with the lowest validation loss observed during training.*</sub>
 
 ### 🚀 Model Inference
 
