@@ -149,7 +149,7 @@ We evaluated three levels of fine-tuning for the base C2T-Net:
 
 - **Full Fine-Tuning**: All model parameters are updated.
 - **Partial Fine-Tuning**: Only the cross-fusion layers are updated.
-- **Head Fine-Tuning**: Only the fully connected (FC) classification head is updated.
+- **Head Fine-Tuning**: Only the fully connected (FC) classification head layers are updated.
 
 ---
 
