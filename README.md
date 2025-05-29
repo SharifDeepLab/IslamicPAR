@@ -35,7 +35,7 @@ Total                | 4            | 1,785      | 208x442 (all boxes)
 
 You can download the full dataset from Google Drive:
 
-🔗 [Download islamicPAR.zip](https://drive.google.com/your-download-link-here)
+🔗 [Download islamicPAR.zip](https://drive.google.com/file/d/1nEpntJB6Ba1TSAzoGSFM3qB6awGKtysi/view?usp=drive_link)
 
 After extracting `islamicPAR.zip`, you should see the following structure:
 
@@ -226,3 +226,4 @@ For questions, feedback, or collaboration opportunities related to the IslamicPA
 **Sharif Deep Learning Lab**
 
 ✉️ sharif.deeplab@gmail.com
+✉️ alishahedi3216@gmail.com
