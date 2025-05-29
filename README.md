@@ -37,10 +37,10 @@ You can download the full dataset from Google Drive:
 
 🔗 [Download sharifPAR.zip](https://drive.google.com/file/d/1nTYbV9_DaCfFlS24VLKs1pDljuqU0Ffn/view?usp=drive_link)
 
-After extracting `islamicPAR.zip`, you should see the following structure:
+After extracting `sharifPAR.zip`, you should see the following structure:
 
 ```
-islamicPAR/
+sharifPAR/
 ├── release_data/
 │   ├── c1_v1_1_192.jpg
 │   ├── c2_v3_23_37.jpg
