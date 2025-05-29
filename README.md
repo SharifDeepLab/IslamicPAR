@@ -35,7 +35,7 @@ Total                | 4            | 1,785      | 208x442 (all boxes)
 
 You can download the full dataset from Google Drive:
 
-🔗 [Download sharifPAR.zip](https://drive.google.com/file/d/1nEpntJB6Ba1TSAzoGSFM3qB6awGKtysi/view?usp=drive_link)
+🔗 [Download sharifPAR.zip](https://drive.google.com/file/d/1nTYbV9_DaCfFlS24VLKs1pDljuqU0Ffn/view?usp=drive_link)
 
 After extracting `islamicPAR.zip`, you should see the following structure:
 
