@@ -1,13 +1,13 @@
-IslamicPAR Dataset License Agreement
+Sharif_PAR Dataset License Agreement
 ====================================
 
 Copyright (c) 2025 Sharif Deep Learning Lab
 
-This dataset, referred to as "IslamicPAR", is made available for non-commercial research and academic use only. By downloading, using, or distributing this dataset, you agree to the terms below.
+This dataset, referred to as "Sharif_PAR", is made available for non-commercial research and academic use only. By downloading, using, or distributing this dataset, you agree to the terms below.
 
 1. Usage Terms
 --------------
-You are granted a non-exclusive, non-transferable, revocable license to use the IslamicPAR dataset solely for:
+You are granted a non-exclusive, non-transferable, revocable license to use the Sharif_PAR dataset solely for:
 
 - Academic research
 - Non-commercial projects
@@ -21,11 +21,11 @@ You may not redistribute the dataset, in whole or in part, without explicit writ
 
 3. Citation Requirement
 -----------------------
-If you use the IslamicPAR dataset in any publication, research, or public release, you must include the following citation:
+If you use the Sharif_PAR dataset in any publication, research, or public release, you must include the following citation:
 
-    @misc{IslamicPAR2025,
-      title={IslamicPAR: A Culturally Enriched Dataset for Pedestrian Attribute Recognition},
-      author={Ali Shahedi},
+    @misc{SharifPAR2025,
+      title={Sharif_PAR: A Culturally Enriched Dataset for Pedestrian Attribute Recognition},
+      author={Ali Shahedi, Ali Jokar, Hoda Mohammadzadeh},
       note={Dataset available at https://github.com/your-repo-link, related paper forthcoming},
       year={2025}
     }
