@@ -203,7 +203,7 @@ The following figure demonstrates the model's inference results on a sample pede
 ### 📚 Citation
 If you use the Sharif_PAR dataset in any publication, research, or public release, you must include the following citation:
 
-    @misc{IslamicPAR2025,
+    @misc{SharifPAR2025,
       title={Sharif_PAR: A Culturally Enriched Dataset for Pedestrian Attribute Recognition},
       author={Ali Shahedi, Ali Jokar, Hoda Mohammadzadeh},
       note={Dataset available at https://github.com/SharifDeepLab/Sharif_PAR, related paper forthcoming},
