@@ -206,7 +206,7 @@ If you use the IslamicPAR dataset in any publication, research, or public releas
     @misc{IslamicPAR2025,
       title={IslamicPAR: A Culturally Enriched Dataset for Pedestrian Attribute Recognition},
       author={Ali Shahedi, Ali Jokar, Hoda Mohammadzadeh},
-      note={Dataset available at https://github.com/your-repo-link, related paper forthcoming},
+      note={Dataset available at https://github.com/SharifDeepLab/IslamicPAR, related paper forthcoming},
       year={2025}
     }
 
@@ -218,3 +218,11 @@ It may be used strictly for **non-commercial research and academic purposes**.
 For any other use cases, including commercial or redistribution requests, please contact the authors.
 
 See the [LICENSE](./LICENSE) file for full terms.
+
+### 📬 Contact
+
+For questions, feedback, or collaboration opportunities related to the IslamicPAR dataset, please contact:
+
+**Sharif Deep Learning Lab**
+
+✉️ sharif.deeplab@gmail.com
