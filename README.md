@@ -1,15 +1,15 @@
-# IslamicPAR
+# Sharif_PAR
 
 <p align="center">
   <img src="assets/boxes.png" alt="sample boxes" width="700"/>
 </p>
 
 <p align="center">
-  <em>sample boxes from IslamicPAR</em>
+  <em>sample boxes from Sharif_PAR</em>
 </p>
 
 ## Project Overview
-This project focuses on Pedestrian Attribute Recognition (PAR), an important yet challenging task that plays a key role in Pedestrian Re-Identification (ReID) and Person Retrieval. We present a novel real-world dataset named **IslamicPAR** suited to the PAR task and enriched in diverse environments and cultural contexts. We also fine-tune the C2T-Net model with some improvements to the dataset.
+This project focuses on Pedestrian Attribute Recognition (PAR), an important yet challenging task that plays a key role in Pedestrian Re-Identification (ReID) and Person Retrieval. We present a novel real-world dataset named **Sharif_PAR** suited to the PAR task and enriched in diverse environments and cultural contexts. We also fine-tune the C2T-Net model with some improvements to the dataset.
 
 ### 🔍 Key features of the dataset
 1. **Cultural Adaptation**: Our dataset is specifically designed to reflect Islamic cultural norms, providing a unique contribution to the PAR community. This dataset includes a wide variety of clothing styles, such as Hijab models, and formal and informal wear for male and female pedestrians.
@@ -138,7 +138,7 @@ This strategy enables the model to learn more **robust** and **generalizable** f
 
 ## 🚀 Model Development
 
-This part of the project covers the adaptation and enhancement of **Channel-Aware Cross-Fused Transformer-style Networks (C2T-Net)** on the IslamicPAR dataset.  
+This part of the project covers the adaptation and enhancement of **Channel-Aware Cross-Fused Transformer-style Networks (C2T-Net)** on the Sharif_PAR dataset.  
 C2T-Net achieved **1st place** in the [UPAR@WACV2024](https://chalearnlap.cvc.uab.cat/dataset/45/description/) challenge (January 2024) on the original UPAR dataset.
 
 We fine-tuned the C2T-Net on our dataset and applied strategies to enhance the performance of the main model:
@@ -201,12 +201,12 @@ The following figure demonstrates the model's inference results on a sample pede
 </p>
 
 ### 📚 Citation
-If you use the IslamicPAR dataset in any publication, research, or public release, you must include the following citation:
+If you use the Sharif_PAR dataset in any publication, research, or public release, you must include the following citation:
 
     @misc{IslamicPAR2025,
-      title={IslamicPAR: A Culturally Enriched Dataset for Pedestrian Attribute Recognition},
+      title={Sharif_PAR: A Culturally Enriched Dataset for Pedestrian Attribute Recognition},
       author={Ali Shahedi, Ali Jokar, Hoda Mohammadzadeh},
-      note={Dataset available at https://github.com/SharifDeepLab/IslamicPAR, related paper forthcoming},
+      note={Dataset available at https://github.com/SharifDeepLab/Sharif_PAR, related paper forthcoming},
       year={2025}
     }
 
