@@ -184,7 +184,7 @@ We evaluated three levels of fine-tuning for the base C2T-Net:
 | Focal Loss                   | 96.44          | 83.47            | 70.02                | 96.92                | 65.40    |
 
 
-<sub>🔹 *Note: The reported figures correspond to the epoch with the lowest validation loss observed during training.*</sub>
+<sub>🔹 *Note: The reported figures correspond to the epoch with the lowest validation loss observed during training. Also we used the first version of the dataset for training process. More information will be provided in the paper*</sub>
 
 ### 🚀 Model Inference
 
