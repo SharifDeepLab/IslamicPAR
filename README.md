@@ -218,12 +218,3 @@ It may be used strictly for **non-commercial research and academic purposes**.
 For any other use cases, including commercial or redistribution requests, please contact the authors.
 
 See the [LICENSE](./LICENSE) file for full terms.
-
-### 📬 Contact
-
-For questions, feedback, or collaboration opportunities related to the IslamicPAR dataset, please contact:
-
-**Sharif Deep Learning Lab**
-
-✉️ sharif.deeplab@gmail.com
-✉️ alishahedi3216@gmail.com
